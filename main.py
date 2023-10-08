@@ -46,4 +46,4 @@ if __name__ == "__main__":
             messageMeOnDiscord(True)
             print("Success!")
             break
-        time.sleep(120)
+        time.sleep(300)
