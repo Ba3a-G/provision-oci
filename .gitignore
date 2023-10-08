@@ -1,2 +1,11 @@
 config.tf
 .terraform*
+terraform.tfstate
+keys/*
+tests/*
+
+#Env
+.env
+
+#Python
+venv/

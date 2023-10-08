@@ -68,7 +68,7 @@ resource "oci_core_instance" "generated_oci_core_instance" {
 		are_legacy_imds_endpoints_disabled = "false"
 	}
 	metadata = {
-		"ssh_authorized_keys" = "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCL3xSvp5sZuVmAK+meHhyH0+qtrsD4eVkyVfgd24c2MpsbDhJ6tx1TwLOhNoO/fO3n6pslFOE9fsv1ONyOmrppLohr1t/yusEYY2P8kTbNyxV2hlC5AQ6aYcJB+G5giAzL6DeEyZJ9i4fw32j9CoyOBw0VK810QV4erYTQ4S73C20GkJKYmmTDEaQE2FJHrDFPa7XqmTFJG3lV63YDTdgV1Wp8iq9bPl7BCxCKZJeRX9yi9Cz8ow+8LMwbvpoJYGqKN/YcVdhhg8//INiUnOVU6tzw9P2bFlhwrsiaT01Wnk7wQDopTejuGlv0rmHFicbnGeZTJ8zKrAq7jmEhicZ5 ssh-key-2023-09-26"
+		"ssh_authorized_keys" = "${var.instance_public_key}"
 	}
 	shape = "VM.Standard.A1.Flex"
 	shape_config {
